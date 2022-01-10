@@ -1,14 +1,24 @@
 <template>
     <main>
         <div class="container">
-            ESEMPIO
+            <div class="list_card">
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+            </div>
         </div>
     </main>
 </template>
 
 <script>
+import Card from "./Card.vue"
+
 export default {
-    name: "Main"
+    name: "Main",
+        components:{
+            Card
+        },
 }
 </script>
 
@@ -19,5 +29,9 @@ main{
     height: calc(100% - 70px);
     color: white;
     background-color: $secondary_color;
+    .list_card{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 </style>
