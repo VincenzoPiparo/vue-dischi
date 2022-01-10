@@ -1,17 +1,20 @@
 <template>
     <div class="card">
-        <img src="https://cdn2.jazztimes.com/2018/05/SteveGadd-800x723.jpg" alt="">
+        <img :src="details.poster" alt="">
 
-        <h2>name</h2>
+        <h2>{{details.title}}</h2>
 
-        <h4>autor</h4>
-        <h4>year</h4>
+        <h4>{{details.author}}</h4>
+        <h4>{{details.year}}</h4>
     </div>
 </template>
 
 <script>
 export default {
-    name:"Card"
+    name:"Card",
+    props:{
+        details: Object
+    }
 }
 </script>
 
