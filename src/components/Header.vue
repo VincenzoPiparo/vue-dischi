@@ -14,8 +14,9 @@ export default {
 @import '../style/variables';
 header{
    background-color: $primary_color;
+   height: 70px;
         img{
-            margin: 20px;
+            margin: 10px;
             width: 50px;
         }
 }
